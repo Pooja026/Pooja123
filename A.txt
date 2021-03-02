@@ -1,4 +1,1 @@
-asdfjfjbkmlzxcvbnjmks
-
-qawsdxcfvmbjnmkl
-zsdxfvmfjmk,
+select * from Company;
