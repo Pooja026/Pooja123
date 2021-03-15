@@ -3,24 +3,26 @@ pipeline {
 
     stages {
        
-        stage('Build') {
+        stage('git repo & clean') {
             steps {
-                bat 'Building'
+                bat "rmdir  /s /q  Pooja123"
+                bat "git clone https://github.com/Pooja026/Pooja123.git"
+                bat "mvn clean -f Pooja123"
             }
         }
-        stage('Deploy') {
+        stage('install') {
             steps {
-                bat 'Deplyoing'
+                bat "mvn install -f Pooja123"
             }
         }
         stage('Test') {
             steps {
-                bat 'Testing'
+                bat "mvn test -f Pooja123"
             }
         }
-        stage('Release') {
+        stage('package') {
             steps {
-                bat 'Realeasing'
+                bat "mvn package -f Pooja123"
             }
         }
     }
