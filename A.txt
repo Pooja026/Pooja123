@@ -1,4 +1,2 @@
-asdfjfjbkmlzxcvbnjmks
-
-qawsdxcfvmbjnmkl
-zsdxfvmfjmk,
+/*select * from Company;*/
+select * from Emp;
