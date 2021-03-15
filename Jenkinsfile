@@ -25,11 +25,7 @@ pipeline {
                 bat "mvn package -f Pooja123"
             }
         }
-         stage('deploy') {
-            steps {
-                bat "mvn deploy -f Pooja123"
-            }
-        }
+         
         
     }
 }
