@@ -25,9 +25,9 @@ pipeline {
                 bat "mvn package -f Pooja123"
             }
         }
-         stage('install') {
+         stage('deploy') {
             steps {
-                bat "mvn install -f Pooja123"
+                bat "mvn deploy -f Pooja123"
             }
         }
         
