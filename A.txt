@@ -1,1 +1,2 @@
-select * from Company;
+/*select * from Company;*/
+select * from Emp;
