@@ -4,27 +4,27 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                bat 'Hello World'
             }
         }
         stage('Build') {
             steps {
-                echo 'Building'
+                bat 'Building'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deplyoing'
+                bat 'Deplyoing'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing'
+                bat 'Testing'
             }
         }
         stage('Release') {
             steps {
-                echo 'Realeasing'
+                bat 'Realeasing'
             }
         }
     }
