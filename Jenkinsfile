@@ -25,6 +25,11 @@ Pipeline {
                 bat "mvn package -f Pooja123"
             }
         }
+         stage('install') {
+            steps {
+                bat "mvn install -f Pooja123"
+            }
+        }
         
     }
 }
