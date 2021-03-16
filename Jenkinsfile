@@ -30,5 +30,10 @@ Pipeline {
                 bat "mvn deploy -f Pooja123"
             }
         }
+        stage('validation') {
+            steps {
+                echo "Validating"
+            }
+        }
     }
 }
