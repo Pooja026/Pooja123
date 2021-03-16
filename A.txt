@@ -1,5 +1,5 @@
 /*select * from Company;*/
 select * from Emp;
 select empno from emp:
-aasdfjkllkjf
+
 asderfcxzswaqw
